@@ -110,7 +110,7 @@ class DropdownMenu {
         if (elementTop + dropdown.offsetHeight < window.innerHeight) {
             return elementTop;
         }
-        return this._element.offsetTop - dropdown.offsetHeight;
+        return elementTop - dropdown.offsetHeight;
     }
 
     getLeftPosition(dropdown,event = '') {
